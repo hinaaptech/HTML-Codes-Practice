@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css"> 
+.abc
+{
+/* Safari and Chrome: */
+position:relative;
+-webkit-animation-name:myfirst;
+-webkit-animation-duration:4s;
+-webkit-animation-timing-function:linear;
+-webkit-animation-delay:1s;
+-webkit-animation-iteration-count:infinite;
+-webkit-animation-direction:alternate;
+-webkit-animation-play-state:running;
+}
+/* Safari and Chrome */
+@-webkit-keyframes myfirst 
+{
+0% {background:url('bird.png'); left:0px; top:0px;}
+100% {background:url('bird.png'); left:1150px; top:300px;}
+}
+
+</style>
+</head>
+<body>
+<p><b>Note:</b> Animation</p>
+<img class="abc" src="bird.png">
+</body>
+</html>

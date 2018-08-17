@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/* Is used for selecting all unvisited links */
+a:link {
+    color: blue;
+}
+
+/* Is used for selecting the active link */
+a:visited {
+    color: purple;
+}
+/* Is used for selecting links on mouse over */
+a:hover {
+    color: red;
+}
+
+/*Is used for displaying selected link */
+a:active {
+    color: green;
+}
+/*Is used for selecting every selected element with a lang attribute value*/
+h3:lang(en) { 
+    color: red;
+}
+/*Is used for selecting the first letter of every selected element */
+p:first-letter {
+    color: blue;
+font-size: 200%;
+} 
+/*Is used for selecting the first line of every selected element */
+p:first-line {
+    color: pink;
+}
+/*Is used for selecting every selected elements that is the first child of its parent */
+h1:first-child {
+    color: blue;
+}
+h1::selection {
+    background-color: yellow;
+}
+
+</style>
+</head>
+<body>
+
+<h1> Trying Psuedo Classes </h1>
+<h1>Heading 2</h1>
+<h1>Heading 3</h1>
+<h2>Heading 4 </h2>
+<h3 lang="en"> Hello World</h3>
+<p>Pseudo classes allow the users to apply different styles to the elements such as buttons, hyperlinks
+<br>and so on. You can test it on below mentioned links</p>
+
+
+<a href="https://www.google.com">google</a><br>
+<a href="https://www.wikipedia.org">wikipedia.org</a><br>
+
+</body>
+</html>
