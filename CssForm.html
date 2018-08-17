@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+<head>
+<style>
+input{
+outline: 2px gray solid;
+color: Black ;
+background-position:center;
+}
+input:required {
+outline: 2px black solid;
+color: black ;
+}
+
+input:required:valid {
+color: green;
+}
+input:required:invalid {
+background-position: center;
+color:red;
+}
+</style>
+</head>
+
+<body>
+<form>
+Name: <input type="text" required="true"><br><br>
+Email: <input type="email" required><br>
+<br><input type="submit" style="margin-left:45px;">
+</form>
+</body>
+</html>
