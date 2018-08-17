@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+
+<form>
+<legend>
+<label>First Number </label>
+<input type="text" id="num1" placeholder="0" /><br/>
+<label>Second Number </label>
+<input type="text" id="num2" placeholder="0" /><br/>
+<button type="submit" onclick="add()">Add</button><br/>
+<label id="result">You answer will display here</label>
+</legend>
+</form>
+
+<script>
+
+function add(){
+	var num1=parseInt(document.getElementById("num1").value);
+	var num2=parseInt(document.getElementById("num2").value);
+	var sum=num1+num2;
+	var x=document.getElementById("result");
+	x.innerHTML=sum;
+	}
+
+</script>
+</body>
+</html>
